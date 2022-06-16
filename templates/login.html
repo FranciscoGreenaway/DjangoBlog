@@ -10,15 +10,23 @@
     <title>Log In</title>
 </head>
 <body>
-    <div class="main">
-        <h1 class="sign" align="center">
+    <div class="login-main">
+        <h1 class="header" align="center">
             Login
         </h1>
-        <form class="form1" method="Post" action="login" align="center">
+
+        {% for message in messages %}
+            <p style="color: red; text-align: center" >{{ message }}</p>
+        {% endfor %}
+
+        <form class="form" method="Post" action="login" align="center">
             {% csrf_token %}
             <input class='input' type="text" name="username" placeholder="Username">
             <input class='input' type="password" name="password" placeholder="Password"><br>
-            <button type="submit" class="submit">Login</button>
+            <button class='submit' type="submit" >Login</button>
+            <p class="signup-link">
+                <a class="signup-link" href="signup">Sign Up</a>
+            </p>
         </form>
     </div>
 
