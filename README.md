@@ -1,5 +1,5 @@
 # DjangoBlog
-- Purpose: Attain hands on experience with Django. Practice Dynamic URL routing based on user authentication, form submittions, and/or user clicks.
+- Purpose: Attain hands on experience with Django. Practice Dynamic URL routing based on user authentication, form submissions, and/or user clicks.
 
 ## Images
 - When user isn't logged in
